@@ -1,4 +1,4 @@
-# JSONSki-vs-Pison-and-simdjson
+# JSONSki vs simdjson
 This repository contains experiments to compare the performance of JSONSki against that of simdjson.
 
 The `.cpp` files in this repository use `bestbuy_large_record.json` from this [link](https://drive.google.com/drive/folders/1KQ1DjvIWpHikOg1JgmjlSWM3aAlvq-h7)
