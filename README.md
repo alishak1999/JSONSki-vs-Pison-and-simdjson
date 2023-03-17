@@ -27,7 +27,7 @@ Here are the results for this:
 <img width="767" alt="Capture12" src="https://user-images.githubusercontent.com/31547103/225524372-21f3bc48-0b72-4c12-8b61-d442a7990933.PNG">
 
 ### Experiment 2(b)
-The files `jsonski_forslice.cpp` and `simdjson_dom_slice.cpp` are used to compare the performance of the two parsers when attempting to parse a sequence of contiguous JSON instances using a loop by utilizing the on-demand parser for simdjson.
+The files `jsonski_forslice.cpp` and `simdjson_dom_slice.cpp` are used to compare the performance of the two parsers when attempting to parse a sequence of contiguous JSON instances using a loop by utilizing the DOM parser for simdjson.
 
 Here are the results for this:
 
