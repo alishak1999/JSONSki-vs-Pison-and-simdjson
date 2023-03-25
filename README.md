@@ -70,3 +70,4 @@ Query (in JSONSki format): `$.items[0:100].name`
 | ------------- | ------------- | ------------- |
 | 3.06352 secs  | 17.3502 secs  | 28.6974 secs  |
 
+It is observed that the on-demand parser is faster than the DOM parser for simdjson.
