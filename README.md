@@ -34,3 +34,39 @@ Here are the results for this:
 <img width="957" alt="Capture11" src="https://user-images.githubusercontent.com/31547103/225524548-78696c61-e1b0-49f9-861e-866a393aed13.PNG">
 
 These experiments using the DOM parser show that JSONSki is around 11 to 12 times faster than simdjson.
+
+### Experiment 3
+In each of the folders bestbuy, googlemaps, twitter and walmart, there are 3 `.cpp` files to compare the performance of JSONSki against simdjson (on-demand and DOM). For the sake of uniformity, the queries for every dataset traverse through 100 instances for every dataset. Below is the summary of results:
+
+a) Bestbuy dataset
+
+Query (in JSONSki format): `$.products[0:100].class`
+
+| JSONSki  | On-Demand simdjson | DOM simdjson |
+| ------------- | ------------- | ------------- |
+| 3.949 secs  | 19.3541 secs  | 38.2774 secs  |
+
+b) Twitter dataset
+
+Query (in JSONSki format): `$[0:100].text`
+
+| JSONSki  | On-Demand simdjson | DOM simdjson |
+| ------------- | ------------- | ------------- |
+| 3.78423 secs  | 15.5505 secs  | 28.7567 secs  |
+
+c) Google Maps dataset
+
+Query (in JSONSki format): `$[0:100].status`
+
+| JSONSki  | On-Demand simdjson | DOM simdjson |
+| ------------- | ------------- | ------------- |
+| 3.2857 secs  | 28.9143 secs  | 37.4388 secs  |
+
+d) Walmart dataset
+
+Query (in JSONSki format): `$.items[0:100].name`
+
+| JSONSki  | On-Demand simdjson | DOM simdjson |
+| ------------- | ------------- | ------------- |
+| 3.06352 secs  | 17.3502 secs  | 28.6974 secs  |
+
